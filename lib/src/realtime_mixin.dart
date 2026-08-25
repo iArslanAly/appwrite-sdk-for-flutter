@@ -139,7 +139,7 @@ mixin RealtimeMixin {
             case 'pong':
               break;
             case 'event':
-              final messageData = data.data as Map<String, dynamic>;
+              final messageData = data.data;
               final message = RealtimeMessage.fromMap(messageData);
               final subscriptions =
                   (messageData['subscriptions'] as List<dynamic>?)

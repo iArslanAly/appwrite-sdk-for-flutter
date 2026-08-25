@@ -1,14 +1,15 @@
-import 'package:flutter_test/flutter_test.dart';
-import 'package:mockito/mockito.dart';
-import 'package:appwrite/models.dart' as models;
+import 'dart:typed_data';
+
+import 'package:appwrite/appwrite.dart';
 import 'package:appwrite/enums.dart' as enums;
 import 'package:appwrite/src/enums.dart';
-import 'package:appwrite/src/response.dart';
-import 'dart:typed_data';
-import 'package:appwrite/appwrite.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:mockito/mockito.dart';
 
 class MockClient extends Mock implements Client {
+  @override
   Map<String, String> config = {'project': 'testproject'};
+  @override
   String endPoint = 'https://localhost/v1';
 
   @override

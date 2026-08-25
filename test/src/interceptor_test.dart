@@ -1,10 +1,10 @@
-import 'dart:async';
-import 'package:http/http.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:mockito/mockito.dart';
 import 'package:appwrite/src/interceptor.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:http/http.dart';
+import 'package:mockito/mockito.dart';
 
 class MockRequest extends Mock implements BaseRequest {
+  @override
   final Map<String, String> headers = {};
 
   @override
@@ -22,7 +22,7 @@ void main() {
       final interceptor = HeadersInterceptor(headers);
       final request = MockRequest();
 
-      final interceptedRequest = await interceptor.onRequest(request);
+      final interceptedRequest = interceptor.onRequest(request);
 
       expect(interceptedRequest.headers, equals(headers));
     });

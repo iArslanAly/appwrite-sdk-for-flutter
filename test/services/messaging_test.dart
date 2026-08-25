@@ -8,7 +8,9 @@ import 'dart:typed_data';
 import 'package:appwrite/appwrite.dart';
 
 class MockClient extends Mock implements Client {
+  @override
   Map<String, String> config = {'project': 'testproject'};
+  @override
   String endPoint = 'https://localhost/v1';
 
   @override

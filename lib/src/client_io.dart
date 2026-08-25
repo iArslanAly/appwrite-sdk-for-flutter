@@ -15,7 +15,6 @@ import 'enums.dart';
 import 'exception.dart';
 import 'interceptor.dart';
 import 'response.dart';
-import 'package:flutter/foundation.dart';
 import 'input_file.dart';
 import 'upload_progress.dart';
 

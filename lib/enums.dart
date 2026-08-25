@@ -1,5 +1,5 @@
 /// Appwrite Enums
-library appwrite.enums;
+library;
 
 part 'src/enums/authenticator_type.dart';
 part 'src/enums/authentication_factor.dart';

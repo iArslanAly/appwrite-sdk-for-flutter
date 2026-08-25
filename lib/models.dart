@@ -1,5 +1,5 @@
 /// Appwrite Models
-library appwrite.models;
+library;
 
 import 'enums.dart' as enums;
 

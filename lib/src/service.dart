@@ -1,4 +1,3 @@
-import '../models.dart' as models;
 import 'client.dart';
 
 class Service {

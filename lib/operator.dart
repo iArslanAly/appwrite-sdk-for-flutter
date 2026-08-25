@@ -24,7 +24,7 @@ class Operator {
   final String method;
   final dynamic values;
 
-  Operator._(this.method, [this.values = null]);
+  Operator._(this.method, [this.values]);
 
   Map<String, dynamic> toJson() {
     final result = <String, dynamic>{};

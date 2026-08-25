@@ -6,8 +6,8 @@ import 'dart:async';
 void main() {
   group('RealtimeSubscription', () {
     final mockStream = StreamController<RealtimeMessage>.broadcast();
-    final mockCloseFunction = () async {};
-    final mockUnsubscribeFunction = () async {};
+    Future<void> mockCloseFunction() async {}
+    Future<void> mockUnsubscribeFunction() async {}
     Future<void> mockUpdateFunction({
       List<Object>? channels,
       List<String>? queries,

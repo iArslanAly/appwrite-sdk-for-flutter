@@ -3,7 +3,7 @@
 /// This SDK is compatible with Appwrite server version 1.9.x.
 /// For older versions, please check
 /// [previous releases](https://github.com/appwrite/sdk-for-flutter/releases).
-library appwrite;
+library;
 
 import 'dart:async';
 import 'dart:math';
@@ -26,11 +26,11 @@ export 'src/realtime_subscription.dart';
 export 'src/realtime_message.dart';
 export 'src/input_file.dart';
 
+part 'channel.dart';
 part 'query.dart';
 part 'permission.dart';
 part 'role.dart';
 part 'id.dart';
-part 'channel.dart';
 part 'operator.dart';
 part 'services/account.dart';
 part 'services/avatars.dart';

@@ -1,14 +1,14 @@
+import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/enums.dart' as enums;
+import 'package:appwrite/models.dart' as models;
+import 'package:appwrite/src/enums.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
-import 'package:appwrite/models.dart' as models;
-import 'package:appwrite/enums.dart' as enums;
-import 'package:appwrite/src/enums.dart';
-import 'package:appwrite/src/response.dart';
-import 'dart:typed_data';
-import 'package:appwrite/appwrite.dart';
 
 class MockClient extends Mock implements Client {
+  @override
   Map<String, String> config = {'project': 'testproject'};
+  @override
   String endPoint = 'https://localhost/v1';
 
   @override
@@ -350,8 +350,7 @@ void main() {
     test('test method createMfaAuthenticator()', () async {
       final Map<String, dynamic> data = {
         'secret': "[SHARED_SECRET]",
-        'uri':
-            "otpauth://totp/appwrite:user@example.com?secret=[SHARED_SECRET]&issuer=appwrite",
+        'uri': "otpauth://totp/appwrite:user@example.com?secret=[SHARED_SECRET]&issuer=appwrite",
       };
 
       when(
@@ -367,8 +366,7 @@ void main() {
     test('test method createMFAAuthenticator()', () async {
       final Map<String, dynamic> data = {
         'secret': "[SHARED_SECRET]",
-        'uri':
-            "otpauth://totp/appwrite:user@example.com?secret=[SHARED_SECRET]&issuer=appwrite",
+        'uri': "otpauth://totp/appwrite:user@example.com?secret=[SHARED_SECRET]&issuer=appwrite",
       };
 
       when(
