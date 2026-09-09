@@ -5,7 +5,7 @@
 /// build, use a matching older SDK from
 /// [previous releases](https://github.com/appwrite/sdk-for-flutter/releases)
 /// when APIs differ.
-library appwrite;
+library;
 
 import 'dart:async';
 import 'dart:math';
@@ -32,7 +32,6 @@ part 'query.dart';
 part 'permission.dart';
 part 'role.dart';
 part 'id.dart';
-part 'channel.dart';
 part 'operator.dart';
 part 'services/account.dart';
 part 'services/avatars.dart';
@@ -48,3 +47,4 @@ part 'services/storage.dart';
 part 'services/tables_db.dart';
 part 'services/teams.dart';
 part 'services/vectors_db.dart';
+part 'channel.dart';

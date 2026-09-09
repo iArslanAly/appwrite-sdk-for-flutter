@@ -1,0 +1,14 @@
+{
+  "roots": [
+    "appwrite_example"
+  ],
+  "packages": [
+    {
+      "name": "appwrite_example",
+      "version": "0.0.0",
+      "dependencies": [],
+      "devDependencies": []
+    }
+  ],
+  "configVersion": 1
+}

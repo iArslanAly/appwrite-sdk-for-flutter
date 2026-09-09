@@ -1,4 +1,4 @@
-part of appwrite;
+part of 'appwrite.dart';
 
 // Marker classes for type safety
 class _Root {}
